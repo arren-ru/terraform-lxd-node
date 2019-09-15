@@ -15,9 +15,7 @@ variable "profiles" {
 variable "volumes" {
   type = object({ pool = object({ name = string }), mounts = map(string) })
   default = {
-    pool = {
-      name = ""
-    }
+    pool = { name = "" }
     mounts = {}
   }
 }
